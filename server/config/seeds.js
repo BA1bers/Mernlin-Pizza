@@ -22,7 +22,7 @@ db.once('open', async () => {
       name: 'Buffalo Wings',
       description:
         'Classic Chicken wings smoothered in Buffalo Sauce, served with your choice Bleu cheese or Ranch dressing.',
-      image: 'buffaloWings.png',
+      image: 'buffaloWings.PNG',
       category: categories[0]._id,
       price: 5.99,
       quantity: 6
@@ -31,7 +31,7 @@ db.once('open', async () => {
       name: 'Mozzarella Sticks',
       description:
         'Coated with crisp garlic butter breading, sprinkled with Parmesan cheese and served with marinara sauce.',
-      image: 'canned-coffee.jpg',
+      image: 'mozzerellaSticks.PNG',
       category: categories[0]._id,
       price: 3.99,
       quantity: 6
@@ -41,7 +41,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'Fresh buttery-tasting dough baked to golden brown, served drizzled with the perfect amount of cinnamon, sugar, and a side of icing.',
-      image: 'toilet-paper.jpg',
+      image: 'cinnamonTwist.PNG',
       price: 6.99,
       quantity: 10
     },
@@ -50,7 +50,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'Fresh baked dough, topped with a special concoction of Parmesan cheese and garlic.',
-      image: 'soap.jpg',
+      image: 'cheesyBreadSticks.PNG',
       price: 5.99,
       quantity: 10
     },
@@ -59,7 +59,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'Battered Pickle slices deep fried, served with your choice Bleu cheese or Ranch dressing.',
-      image: 'wooden-spoons.jpg',
+      image: 'friedPickles.PNG',
       price: 7.99,
       quantity: 20
     },
@@ -68,7 +68,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'Baked Brussels sprouts tossed in a garlic buffalo sauce, served with vergan bleu cheese or vegan ranch dressing.',
-      image: 'camera.jpg',
+      image: 'veganGarlicBuffaloSprouts.PNG',
       price: 6.99,
       quantity: 6
     },
