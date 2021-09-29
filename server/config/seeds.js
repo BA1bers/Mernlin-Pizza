@@ -143,6 +143,15 @@ db.once('open', async () => {
       image: 'alphabet-blocks.jpg',
       price: 6.99,
       quantity: 1
+    },
+    {
+      name: 'Greek',
+      category: categories[2]._id,
+      description:
+        'Juicy tomatoes, crisp cucumber, sliced red onion, green pepper, crumbly feta cheese and plump Kalamata olives.',
+      image: 'alphabet-blocks.jpg',
+      price: 6.99,
+      quantity: 1
     }
   ]);
 
