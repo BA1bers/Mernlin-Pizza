@@ -73,11 +73,20 @@ db.once('open', async () => {
       quantity: 6
     },
     {
+      name: 'Cheese',
+      category: categories[1]._id,
+      description:
+        'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, and cheese.',
+      image: 'cheesePizza.PNG',
+      price: 9.99,
+      quantity: 1
+    },
+    {
       name: 'Pepperoni',
       category: categories[1]._id,
       description:
         'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese and pepperoni.',
-      image: 'tablet.jpg',
+      image: 'pepperoniPizza.PNG',
       price: 9.99,
       quantity: 1
     },
@@ -85,8 +94,8 @@ db.once('open', async () => {
       name: 'Supreme',
       category: categories[1]._id,
       description:
-        'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, pepperoni, sausage, bell peppers, onions, and mushrooms.',
-      image: 'bedtime-book.jpg',
+        'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, pepperoni, sausage, bell peppers, onions, black olives, and mushrooms.',
+      image: 'supremePizza.PNG',
       price: 9.99,
       quantity: 1
     },
@@ -95,7 +104,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description: 
       'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, pepperoni, sausage, ham, and bacon.',
-      image: 'spinning-top.jpg',
+      image: 'meatLovers.PNG',
       price: 9.99,
       quantity: 1
     },
@@ -104,7 +113,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, ham, and pineapple.',
-      image: 'plastic-horses.jpg',
+      image: 'hawaiianPizza.PNG',
       price: 9.99,
       quantity: 1
     },
@@ -112,8 +121,8 @@ db.once('open', async () => {
       name: 'Veggie',
       category: categories[1]._id,
       description:
-        'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, bell peppers, onions, and mushrooms.',
-      image: 'teddy-bear.jpg',
+        'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, bell peppers, onions, black olives, and mushrooms.',
+      image: 'veggiePizza.PNG',
       price: 9.99,
       quantity: 1
     },
@@ -121,8 +130,8 @@ db.once('open', async () => {
       name: 'Vegan Caprese',
       category: categories[1]._id,
       description:
-        'Deep dish 16" Pizza made with minced garlic, cashew mozzarella, sliced tomatoes, tangy balsamic reduciton, and threads of basil.',
-      image: 'alphabet-blocks.jpg',
+        'Deep dish 16" Pizza made with minced garlic, cashew mozzarella, tomatoes, tangy onions, mushrooms, black olives, and bell peppers.',
+      image: 'veganCapresePizza.PNG',
       price: 10.99,
       quantity: 1
     },
@@ -131,7 +140,7 @@ db.once('open', async () => {
       category: categories[2]._id,
       description:
         'Crisp Hearts of Romaine Tossed in Robust Caesar Dressing, topped with Herbed Croutons & Parmesan Cheese.',
-      image: 'alphabet-blocks.jpg',
+      image: 'cesarSalad.PNG',
       price: 6.99,
       quantity: 1
     },
@@ -140,7 +149,7 @@ db.once('open', async () => {
       category: categories[2]._id,
       description:
         'Bed of mixed greens plus hand-sliced cucumbers, grape tomatoes, shredded cheddar and croutons.',
-      image: 'alphabet-blocks.jpg',
+      image: 'gardenSalad.PNG',
       price: 6.99,
       quantity: 1
     },
@@ -149,7 +158,7 @@ db.once('open', async () => {
       category: categories[2]._id,
       description:
         'Juicy tomatoes, crisp cucumber, sliced red onion, green pepper, crumbly feta cheese and plump Kalamata olives.',
-      image: 'alphabet-blocks.jpg',
+      image: 'greekSalad.PNG',
       price: 6.99,
       quantity: 1
     }
