@@ -5,11 +5,12 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Food' },
-    { name: 'Toppings' },
-    { name: 'Electronics' },
-    { name: 'Books' },
-    { name: 'Toys' }
+    { name: 'Appetizers' },
+    { name: 'Pizza' },
+    { name: 'Salads' },
+    { name: 'Rewards' },
+    { name: 'Contact' },
+    { name: 'AboutUs' }
   ]);
 
   console.log('categories seeded');
@@ -18,58 +19,58 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Tin of Cookies',
+      name: 'Buffalo Wings',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+        'Classic Chicken wings smoothered in Buffalo Sauce, served with your choice Bleu cheese or Ranch dressing.',
       image: 'cookie-tin.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 5.99,
+      quantity: 6
     },
     {
-      name: 'Canned Coffee',
+      name: 'Mozzarella Sticks',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+        'Coated with crisp garlic butter breading, sprinkled with Parmesan cheese and served with marinara sauce.',
       image: 'canned-coffee.jpg',
       category: categories[0]._id,
-      price: 1.99,
-      quantity: 500
+      price: 3.99,
+      quantity: 6
     },
     {
-      name: 'Toilet Paper',
-      category: categories[1]._id,
+      name: 'Cinnamon Twist',
+      category: categories[0]._id,
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+        'Fresh buttery-tasting dough baked to golden brown, served drizzled with the perfect amount of cinnamon, sugar, and a side of icing.',
       image: 'toilet-paper.jpg',
+      price: 6.99,
+      quantity: 10
+    },
+    {
+      name: 'Bread Sticks',
+      category: categories[0]._id,
+      description:
+        'Fresh baked dough, topped with a special concoction of Parmesan cheese and garlic.',
+      image: 'soap.jpg',
+      price: 5.99,
+      quantity: 10
+    },
+    {
+      name: 'Fried Pickles',
+      category: categories[0]._id,
+      description:
+        'Battered Pickle slices deep fried, served with your choice Bleu cheese or Ranch dressing.',
+      image: 'wooden-spoons.jpg',
       price: 7.99,
       quantity: 20
     },
     {
-      name: 'Handmade Soap',
-      category: categories[1]._id,
+      name: 'Vegan Garlic Buffalo Sprouts',
+      category: categories[0]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'soap.jpg',
-      price: 3.99,
-      quantity: 50
-    },
-    {
-      name: 'Set of Wooden Spoons',
-      category: categories[1]._id,
-      description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
-      image: 'wooden-spoons.jpg',
-      price: 14.99,
-      quantity: 100
-    },
-    {
-      name: 'Camera',
-      category: categories[2]._id,
-      description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
+        'Baked Brussels sprouts tossed in a garlic buffalo sauce, served with vergan bleu cheese or vegan ranch dressing.',
       image: 'camera.jpg',
-      price: 399.99,
-      quantity: 30
+      price: 6.99,
+      quantity: 6
     },
     {
       name: 'Tablet',
