@@ -5,11 +5,12 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Food' },
-    { name: 'Household Supplies' },
-    { name: 'Electronics' },
-    { name: 'Books' },
-    { name: 'Toys' }
+    { name: 'Appetizers' },
+    { name: 'Pizza' },
+    { name: 'Salads' },
+    { name: 'Rewards' },
+    { name: 'Contact' },
+    { name: 'AboutUs' }
   ]);
 
   console.log('categories seeded');
@@ -18,111 +19,148 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Tin of Cookies',
+      name: 'Buffalo Wings',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'cookie-tin.jpg',
+        'Classic Chicken wings smoothered in Buffalo Sauce, served with your choice Bleu cheese or Ranch dressing.',
+      image: 'buffaloWings.PNG',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 5.99,
+      quantity: 6
     },
     {
-      name: 'Canned Coffee',
+      name: 'Mozzarella Sticks',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: 'canned-coffee.jpg',
+        'Coated with crisp garlic butter breading, sprinkled with Parmesan cheese and served with marinara sauce.',
+      image: 'mozzerellaSticks.PNG',
       category: categories[0]._id,
-      price: 1.99,
-      quantity: 500
+      price: 3.99,
+      quantity: 6
     },
     {
-      name: 'Toilet Paper',
-      category: categories[1]._id,
+      name: 'Cinnamon Twist',
+      category: categories[0]._id,
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
-      image: 'toilet-paper.jpg',
+        'Fresh buttery-tasting dough baked to golden brown, served drizzled with the perfect amount of cinnamon, sugar, and a side of icing.',
+      image: 'cinnamonTwist.PNG',
+      price: 6.99,
+      quantity: 10
+    },
+    {
+      name: 'Cheesy Bread Sticks',
+      category: categories[0]._id,
+      description:
+        'Fresh baked dough, topped with a special concoction of Parmesan cheese and garlic.',
+      image: 'cheesyBreadSticks.PNG',
+      price: 5.99,
+      quantity: 10
+    },
+    {
+      name: 'Fried Pickles',
+      category: categories[0]._id,
+      description:
+        'Battered Pickle slices deep fried, served with your choice Bleu cheese or Ranch dressing.',
+      image: 'friedPickles.PNG',
       price: 7.99,
       quantity: 20
     },
     {
-      name: 'Handmade Soap',
+      name: 'Vegan Garlic Buffalo Sprouts',
+      category: categories[0]._id,
+      description:
+        'Baked Brussels sprouts tossed in a garlic buffalo sauce, served with vergan bleu cheese or vegan ranch dressing.',
+      image: 'veganGarlicBuffaloSprouts.PNG',
+      price: 6.99,
+      quantity: 6
+    },
+    {
+      name: 'Cheese',
       category: categories[1]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'soap.jpg',
-      price: 3.99,
-      quantity: 50
+        'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, and cheese.',
+      image: 'cheesePizza.PNG',
+      price: 9.99,
+      quantity: 1
     },
     {
-      name: 'Set of Wooden Spoons',
+      name: 'Pepperoni',
       category: categories[1]._id,
       description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
-      image: 'wooden-spoons.jpg',
-      price: 14.99,
-      quantity: 100
+        'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese and pepperoni.',
+      image: 'pepperoniPizza.PNG',
+      price: 9.99,
+      quantity: 1
     },
     {
-      name: 'Camera',
+      name: 'Supreme',
+      category: categories[1]._id,
+      description:
+        'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, pepperoni, sausage, bell peppers, onions, black olives, and mushrooms.',
+      image: 'supremePizza.PNG',
+      price: 9.99,
+      quantity: 1
+    },
+    {
+      name: 'Meat Lovers',
+      category: categories[1]._id,
+      description: 
+      'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, pepperoni, sausage, ham, and bacon.',
+      image: 'meatLovers.PNG',
+      price: 9.99,
+      quantity: 1
+    },
+    {
+      name: 'Hawaiian',
+      category: categories[1]._id,
+      description:
+        'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, ham, and pineapple.',
+      image: 'hawaiianPizza.PNG',
+      price: 9.99,
+      quantity: 1
+    },
+    {
+      name: 'Veggie',
+      category: categories[1]._id,
+      description:
+        'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, bell peppers, onions, black olives, and mushrooms.',
+      image: 'veggiePizza.PNG',
+      price: 9.99,
+      quantity: 1
+    },
+    {
+      name: 'Vegan Caprese',
+      category: categories[1]._id,
+      description:
+        'Deep dish 16" Pizza made with minced garlic, cashew mozzarella, tomatoes, tangy onions, mushrooms, black olives, and bell peppers.',
+      image: 'veganCapresePizza.PNG',
+      price: 10.99,
+      quantity: 1
+    },
+    {
+      name: 'Cesar',
       category: categories[2]._id,
       description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
-      image: 'camera.jpg',
-      price: 399.99,
-      quantity: 30
+        'Crisp Hearts of Romaine Tossed in Robust Caesar Dressing, topped with Herbed Croutons & Parmesan Cheese.',
+      image: 'cesarSalad.PNG',
+      price: 6.99,
+      quantity: 1
     },
     {
-      name: 'Tablet',
+      name: 'Garden',
       category: categories[2]._id,
       description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
-      image: 'tablet.jpg',
-      price: 199.99,
-      quantity: 30
+        'Bed of mixed greens plus hand-sliced cucumbers, grape tomatoes, shredded cheddar and croutons.',
+      image: 'gardenSalad.PNG',
+      price: 6.99,
+      quantity: 1
     },
     {
-      name: 'Tales at Bedtime',
-      category: categories[3]._id,
+      name: 'Greek',
+      category: categories[2]._id,
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
-      image: 'bedtime-book.jpg',
-      price: 9.99,
-      quantity: 100
-    },
-    {
-      name: 'Spinning Top',
-      category: categories[4]._id,
-      description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
-      image: 'spinning-top.jpg',
-      price: 1.99,
-      quantity: 1000
-    },
-    {
-      name: 'Set of Plastic Horses',
-      category: categories[4]._id,
-      description:
-        'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
-      image: 'plastic-horses.jpg',
-      price: 2.99,
-      quantity: 1000
-    },
-    {
-      name: 'Teddy Bear',
-      category: categories[4]._id,
-      description:
-        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
-      image: 'teddy-bear.jpg',
-      price: 7.99,
-      quantity: 100
-    },
-    {
-      name: 'Alphabet Blocks',
-      category: categories[4]._id,
-      description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
-      image: 'alphabet-blocks.jpg',
-      price: 9.99,
-      quantity: 600
+        'Juicy tomatoes, crisp cucumber, sliced red onion, green pepper, crumbly feta cheese and plump Kalamata olives.',
+      image: 'greekSalad.PNG',
+      price: 6.99,
+      quantity: 1
     }
   ]);
 
