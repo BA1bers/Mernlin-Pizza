@@ -73,57 +73,76 @@ db.once('open', async () => {
       quantity: 6
     },
     {
-      name: 'Tablet',
-      category: categories[2]._id,
+      name: 'Pepperoni',
+      category: categories[1]._id,
       description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
+        'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese and pepperoni.',
       image: 'tablet.jpg',
-      price: 199.99,
-      quantity: 30
+      price: 9.99,
+      quantity: 1
     },
     {
-      name: 'Tales at Bedtime',
-      category: categories[3]._id,
+      name: 'Supreme',
+      category: categories[1]._id,
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
+        'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, pepperoni, sausage, bell peppers, onions, and mushrooms.',
       image: 'bedtime-book.jpg',
       price: 9.99,
-      quantity: 100
+      quantity: 1
     },
     {
-      name: 'Spinning Top',
-      category: categories[4]._id,
-      description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
+      name: 'Meat Lovers',
+      category: categories[1]._id,
+      description: 
+      'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, pepperoni, sausage, ham, and bacon.',
       image: 'spinning-top.jpg',
-      price: 1.99,
-      quantity: 1000
-    },
-    {
-      name: 'Set of Plastic Horses',
-      category: categories[4]._id,
-      description:
-        'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
-      image: 'plastic-horses.jpg',
-      price: 2.99,
-      quantity: 1000
-    },
-    {
-      name: 'Teddy Bear',
-      category: categories[4]._id,
-      description:
-        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
-      image: 'teddy-bear.jpg',
-      price: 7.99,
-      quantity: 100
-    },
-    {
-      name: 'Alphabet Blocks',
-      category: categories[4]._id,
-      description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
-      image: 'alphabet-blocks.jpg',
       price: 9.99,
-      quantity: 600
+      quantity: 1
+    },
+    {
+      name: 'Hawaiian',
+      category: categories[1]._id,
+      description:
+        'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, ham, and pineapple.',
+      image: 'plastic-horses.jpg',
+      price: 9.99,
+      quantity: 1
+    },
+    {
+      name: 'Veggie',
+      category: categories[1]._id,
+      description:
+        'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, bell peppers, onions, and mushrooms.',
+      image: 'teddy-bear.jpg',
+      price: 9.99,
+      quantity: 1
+    },
+    {
+      name: 'Vegan Caprese',
+      category: categories[1]._id,
+      description:
+        'Deep dish 16" Pizza made with minced garlic, cashew mozzarella, sliced tomatoes, tangy balsamic reduciton, and threads of basil.',
+      image: 'alphabet-blocks.jpg',
+      price: 10.99,
+      quantity: 1
+    },
+    {
+      name: 'Cesar',
+      category: categories[2]._id,
+      description:
+        'Crisp Hearts of Romaine Tossed in Robust Caesar Dressing, topped with Herbed Croutons & Parmesan Cheese.',
+      image: 'alphabet-blocks.jpg',
+      price: 6.99,
+      quantity: 1
+    },
+    {
+      name: 'Garden',
+      category: categories[2]._id,
+      description:
+        'Bed of mixed greens plus hand-sliced cucumbers, grape tomatoes, shredded cheddar and croutons.',
+      image: 'alphabet-blocks.jpg',
+      price: 6.99,
+      quantity: 1
     }
   ]);
 
