@@ -22,7 +22,7 @@ db.once('open', async () => {
       name: 'Buffalo Wings',
       description:
         'Classic Chicken wings smoothered in Buffalo Sauce, served with your choice Bleu cheese or Ranch dressing.',
-      image: 'cookie-tin.jpg',
+      image: 'buffaloWings.png',
       category: categories[0]._id,
       price: 5.99,
       quantity: 6
@@ -46,7 +46,7 @@ db.once('open', async () => {
       quantity: 10
     },
     {
-      name: 'Bread Sticks',
+      name: 'Cheesy Bread Sticks',
       category: categories[0]._id,
       description:
         'Fresh baked dough, topped with a special concoction of Parmesan cheese and garlic.',
