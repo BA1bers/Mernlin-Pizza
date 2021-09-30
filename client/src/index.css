@@ -1,8 +1,8 @@
 :root {
-  --primary: #ff4800;
-  --secondary: #ffae03;
+  --primary: #003049;
+  --secondary: #FCBF49;
   --tertiary: #413c58;
-  --light: #d8d4d5;
+  --light: #F77F00;
   --dark: #413c58;
   --error: #fcbf49ff;
   --spacing-one: calc(1rem * 0.5);
