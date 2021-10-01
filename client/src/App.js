@@ -10,6 +10,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Nav from "./components/Nav";
 import { StoreProvider } from "./utils/GlobalState";
+import ContactForm from "./pages/ContactUs";
 import Success from "./pages/Success";
 import OrderHistory from "./pages/OrderHistory";
 
@@ -37,6 +38,7 @@ function App() {
               <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/success" component={Success} />
+              <Route exact path="/contactUs" component={ContactForm} />
               <Route exact path="/orderHistory" component={OrderHistory} />
               <Route exact path="/products/:id" component={Detail} />
               <Route component={NoMatch} />
