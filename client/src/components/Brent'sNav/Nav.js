@@ -1,7 +1,7 @@
 import React from 'react'
-//import Auth from "../../utils/auth";
+import Auth from "../../utils/auth";
 import MERNlinLogo from '../Images/MERNlinLogo.png'
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import OrderButton from '../Images/orderNowButton.png'
 
 const Nav = () => {
