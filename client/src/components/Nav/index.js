@@ -14,7 +14,7 @@ function Nav() {
             </Link>
           </li>
           <li className="mx-1">
-            <Link to="/orderHistory">
+            <Link to="/contactUs">
               Contract Us
             </Link>
           </li>
