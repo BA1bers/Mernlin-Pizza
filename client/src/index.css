@@ -28,6 +28,132 @@ body {
   color: var(--dark);
 }
 
+/*Navbar CSS*/
+.navbar {
+  width: 100%;
+  height: 113px;
+  position:fixed;
+  overflow: visible;
+  top: 0;
+  background: rgba(0, 48, 73, 1);
+  z-index: 1;
+}
+
+.navbarContainer {
+  position: relative;
+}
+
+.yellowBar {
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  height: 62px;
+  background: rgba(252, 191, 73, 1);
+  border-bottom: 8px solid rgba(0, 48, 73, 1);
+}
+
+.resName {
+  display: flex;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  background: rgba(0, 48, 73, 1);
+}
+
+#resNameMERNlin {
+  white-space: nowrap;
+  font-family: 'Sonsie One';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  transform: translateX(-250px);
+  color: rgba(247,127,0,1)
+}
+
+#resNamePizza {
+  white-space: nowrap;
+  font-family: 'Sonsie One';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  color: rgba(247,127,0,1);
+}
+
+.logoCircle img{
+  position: absolute;
+  cursor: pointer;
+  max-width: 100%;
+  top: -81px;
+  right: 45%;
+  width: 260px;
+  height: auto;
+}
+
+.logoElipse {
+  position: fixed;
+  transform: matrix(1,0,0,1,814.7231,83.3575) rotate(-52deg);
+  transform-origin: center;
+  width: 213px;
+  height: 81px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+  background: rgba(252, 191, 73, 1);
+  border-radius: 50%;
+}
+
+.navbarLeft {
+  position: absolute;
+  display: flex;
+  list-style-type: none;
+  left: 0;
+  padding-left: 70px;
+}
+
+.navbarLeft li {
+  text-decoration: none;
+  color: rgba(0, 48, 73, 1);
+  cursor: pointer;
+  font-family: 'Sonsie One';
+  font-weight: 500;
+  font-size: 35px;
+  padding: 4px 15px;
+}
+
+.navbarRight {
+  position: absolute;
+  right: 30px;
+  display: flex;
+  list-style-type: none;
+  padding-right: 30px;
+}
+
+.navbarRight li {
+  text-decoration: none;
+  color: rgba(0, 48, 73, 1);
+  cursor: pointer;
+  font-family: 'Sonsie One';
+  font-weight: 500;
+  font-size: 35px;
+  padding: 4px 15px;
+}
+
+.navbarName img {
+  width: 220px;
+  cursor: pointer;
+}
+
+.orderButton img {
+  position: absolute;
+  overflow: visible;
+  cursor: pointer;
+  width: 200px;
+  left: 35px;
+  top: 760px;
+}
+/*Navbar CSS ends*/
+
 h1,
 h2,
 h3,
@@ -202,6 +328,31 @@ input:focus {
 .error-text {
   color: var(--error);
 }
+
+/*Footer begins*/
+mainFooter {
+  width: 100%;
+  height: 100px;
+  position:absolute;
+  bottom: 0;
+  background: rgba(0, 48, 73, 1);
+  z-index: 1;
+}
+
+.footerContainer {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerUl {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*Footer ends*/
 
 @media screen and (max-width: 768px) {
   .card {
