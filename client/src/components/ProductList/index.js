@@ -15,20 +15,20 @@ function ProductList() {
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
   useEffect(() => {
-    if(data) {
+    if (data) {
       dispatch({
-           type: UPDATE_PRODUCTS,
-          products: data.products
-        });
-        data.products.forEach((product) => {
-          idbPromise('products', 'put', product);
-        });
+        type: UPDATE_PRODUCTS,
+        products: data.products
+      });
+      data.products.forEach((product) => {
+        idbPromise('products', 'put', product);
+      });
     } else if (!loading) {
       idbPromise('products', 'get').then((products) => {
         dispatch({
           type: UPDATE_PRODUCTS,
-         products: products
-       });
+          products: products
+        });
       });
     }
   }, [data, loading, dispatch]);
@@ -46,22 +46,22 @@ function ProductList() {
       <h2>Our Products:</h2>
       {state.products.length ? (
         <div className="flex-row">
-            {filterProducts().map(product => (
-                <ProductItem
-                  key= {product._id}
-                  _id={product._id}
-                  image={product.image}
-                  name={product.name}
-                  price={product.price}
-                  quantity={product.quantity}
-                />
-            ))}
+          {filterProducts().map(product => (
+            <ProductItem
+              key={product._id}
+              _id={product._id}
+              image={product.image}
+              name={product.name}
+              price={product.price}
+              quantity={product.quantity}
+            />
+          ))}
         </div>
       ) : (
         <h3>You haven't added any products yet!</h3>
       )}
-      { loading ? 
-      <img src={spinner} alt="loading" />: null}
+      {loading ?
+        <img src={spinner} alt="loading" /> : null}
     </div>
   );
 }
