@@ -5,13 +5,10 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Home' },
     { name: 'Appetizers' },
     { name: 'Pizza' },
     { name: 'Salads' },
-    { name: 'Rewards' },
-    { name: 'Contact' },
-    { name: 'AboutUs' }
+    { name: 'Rewards' }
   ]);
 
   console.log('categories seeded');
@@ -151,6 +148,24 @@ db.once('open', async () => {
       description:
         'Bed of mixed greens plus hand-sliced cucumbers, grape tomatoes, shredded cheddar and croutons.',
       image: 'gardenSalad.PNG',
+      price: 6.99,
+      quantity: 1
+    },
+    {
+      name: 'Greek',
+      category: categories[2]._id,
+      description:
+        'Juicy tomatoes, crisp cucumber, sliced red onion, green pepper, crumbly feta cheese and plump Kalamata olives.',
+      image: 'greekSalad.PNG',
+      price: 6.99,
+      quantity: 1
+    },
+    {
+      name: 'First Purchase',
+      category: categories[3]._id,
+      description:
+        'Juicy tomatoes, crisp cucumber, sliced red onion, green pepper, crumbly feta cheese and plump Kalamata olives.',
+      image: 'greekSalad.PNG',
       price: 6.99,
       quantity: 1
     },
