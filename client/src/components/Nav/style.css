@@ -1,0 +1,187 @@
+/*Navbar CSS*/
+.navbar {
+    width: 100%;
+    height: 113px;
+    position: fixed;
+    overflow: visible;
+    top: 0;
+    background: var(--primary);
+    z-index: 1;
+}
+
+.navbarContainer {
+    position: relative;
+}
+
+.yellowBar {
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    height: 80px;
+    background: rgba(252, 191, 73, 1);
+    border-bottom: 8px solid rgba(0, 48, 73, 1);
+}
+
+.resName {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    background: rgba(0, 48, 73, 1);
+}
+
+#resNameMERNlin {
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    margin-right: 80px;
+    color: rgba(247, 127, 0, 1);
+}
+
+#resNamePizza {
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    color: rgba(247, 127, 0, 1);
+}
+
+.signUp {
+    white-space: nowrap;
+    position: absolute;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    padding-right: 20px;
+    left: 1700px;
+    margin-top: -130px;
+    color: rgba(247, 127, 0, 1);
+}
+
+.logIn {
+    white-space: nowrap;
+    cursor: pointer;
+    position: absolute;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    left: 1850px;
+    margin-top: -130px;
+    color: rgba(247, 127, 0, 1);
+}
+
+.orderHistory {
+    white-space: nowrap;
+    position: absolute;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    padding-right: 20px;
+    left: 250px;
+    margin-top: -130px;
+    color: rgba(247, 127, 0, 1);
+}
+
+.logOut {
+    white-space: nowrap;
+    cursor: pointer;
+    position: absolute;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    left: 450px;
+    margin-top: -130px;
+    color: rgba(247, 127, 0, 1);
+}
+
+.logoCircle img {
+    position: absolute;
+    cursor: pointer;
+    max-width: 100%;
+    top: -65px;
+    width: 260px;
+    height: auto;
+}
+
+.navbarLeft {
+    justify-content: space-between;
+    position: absolute;
+    text-decoration: none;
+    color: var(--primary);
+    display: flex;
+    list-style-type: none;
+    left: 180px;
+    padding-left: 160px;
+    transform: translateY(-20px);
+}
+
+.navbarLeft button {
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--primary);
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    padding: 4px 15px;
+    margin-top: 25px;
+}
+
+.navLinks {
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--primary);
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    padding: 4px 15px;
+    margin-top: 25px;
+}
+
+.navbarRight {
+    position: absolute;
+    text-decoration: none;
+    color: var(--primary);
+    right: 30px;
+    display: flex;
+    list-style-type: none;
+    padding-right: 30px;
+    transform: translateY(-20px);
+}
+
+.navbarRight li {
+    text-decoration: none;
+    color: var(--primary);
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    padding: 4px 15px;
+}
+
+.navbarName img {
+    width: 220px;
+    cursor: pointer;
+}
+
+.orderButton img {
+    position: absolute;
+    overflow: visible;
+    cursor: pointer;
+    width: 200px;
+    left: 35px;
+    top: 760px;
+}
+
+/*Navbar CSS ends*/
