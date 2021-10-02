@@ -15,7 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "graphql": "^15.6.0",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "react-native": "^0.66.0"
   },
   "devDependencies": {
     "concurrently": "^5.1.0"

@@ -9,7 +9,6 @@ import { UPDATE_CATEGORIES, UPDATE_CURRENT_CATEGORY } from '../../utils/actions'
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 
-
 function Nav() {
 
   const [state, dispatch] = useStoreContext();
@@ -136,6 +135,11 @@ function Nav() {
             </li>
           </ul> */}
           <div className="navbarLeft">
+            <button>
+              <Link to="/" className="navLinks">
+                Home
+              </Link>
+            </button>
             <h2></h2>
             {categories.map(item => (
               <button
@@ -147,6 +151,14 @@ function Nav() {
                 {item.name}
               </button>
             ))}
+            <button>
+              <Link to="/ContactUs" className="navLinks">
+                Contact
+              </Link>
+            </button>
+            <button>
+                About Us
+            </button>
           </div>
         </div>
         <div className="orderButton">
