@@ -13,6 +13,7 @@ import { StoreProvider } from "./utils/GlobalState";
 import ContactForm from "./pages/ContactUs";
 import Success from "./pages/Success";
 import OrderHistory from "./pages/OrderHistory";
+import Footer from "./components/Footer/Footer";
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -44,6 +45,7 @@ function App() {
               <Route component={NoMatch} />
             </Switch>
           </StoreProvider>
+          <Footer />
         </div>
       </Router>
     </ApolloProvider>

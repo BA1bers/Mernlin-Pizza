@@ -5,12 +5,6 @@ const Footer = () => {
         <div className="mainFooter">
             <div className="footerContainer">
                 <div className="row">
-                    <ul className="footerUl">
-                        <li>
-                        </li>
-                        <li>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
