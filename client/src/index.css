@@ -314,6 +314,7 @@ input:focus {
   width: 85%;
   max-width: 1200px;
   margin-left: auto;
+  margin-top: 250px;
   margin-right: auto;
 }
 
@@ -383,10 +384,8 @@ input:focus {
 mainFooter {
   width: 100%;
   height: 100px;
-  position:absolute;
-  bottom: 0;
-  background: rgba(0, 48, 73, 1);
-  z-index: 1;
+  position: absolute;
+  background: var(--primary);
 }
 
 .footerContainer {
