@@ -157,14 +157,12 @@ function Nav() {
               </Link>
             </button>
             <button>
-                About Us
+              About Us
             </button>
           </div>
         </div>
         <div className="orderButton">
-          <div id="orderNow">
-            <img src={OrderButton} alt="OrderButton" />
-          </div>
+          <img src={OrderButton} alt="OrderButton" />
         </div>
       </div>
       {showNavigation()}
