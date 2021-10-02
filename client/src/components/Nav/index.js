@@ -1,10 +1,49 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import MERNlinLogo from '../Images/MERNlinLogo.png'
 import OrderButton from '../Images/orderNowButton.png'
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
+import { useQuery } from '@apollo/react-hooks';
+import { useStoreContext } from '../../utils/GlobalState';
+import { UPDATE_CATEGORIES, UPDATE_CURRENT_CATEGORY } from '../../utils/actions';
+import { QUERY_CATEGORIES } from '../../utils/queries';
+import { idbPromise } from '../../utils/helpers';
+
 
 function Nav() {
+
+  const [state, dispatch] = useStoreContext();
+
+  const { categories } = state;
+
+  const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
+
+  useEffect(() => {
+    if (categoryData) {
+      dispatch({
+        type: UPDATE_CATEGORIES,
+        categories: categoryData.categories
+      });
+      categoryData.categories.forEach(category => {
+        idbPromise('categories', 'put', category);
+      });
+    } else if (!loading) {
+      idbPromise('categories', 'get').then(categories => {
+        dispatch({
+          type: UPDATE_CATEGORIES,
+          categories: categories
+        });
+      });
+    }
+  }, [categoryData, loading, dispatch]);
+
+  const handleClick = id => {
+    dispatch({
+      type: UPDATE_CURRENT_CATEGORY,
+      currentCategory: id
+    });
+  };
+
 
   function showNavigation() {
     if (Auth.loggedIn()) {
@@ -52,7 +91,7 @@ function Nav() {
           <Link to="/" className="logoCircle">
             <img src={MERNlinLogo} alt="MERNLinLogo" />
           </Link>
-          <ul className="navbarLeft">
+          {/* <ul className="navbarLeft">
             <li>
               <Link to="/">
                 Home
@@ -95,7 +134,20 @@ function Nav() {
                 About Us
               </Link>
             </li>
-          </ul>
+          </ul> */}
+          <div className="navbarLeft">
+            <h2></h2>
+            {categories.map(item => (
+              <button
+                key={item._id}
+                onClick={() => {
+                  handleClick(item._id);
+                }}
+              >
+                {item.name}
+              </button>
+            ))}
+          </div>
         </div>
         <div className="orderButton">
           <div id="orderNow">
