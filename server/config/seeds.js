@@ -8,7 +8,7 @@ db.once('open', async () => {
     { name: 'Appetizers' },
     { name: 'Pizza' },
     { name: 'Salads' },
-    { name: 'Rewards' }
+    // { name: 'Rewards' }
   ]);
 
   console.log('categories seeded');

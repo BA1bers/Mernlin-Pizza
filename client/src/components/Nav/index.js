@@ -135,7 +135,9 @@ function Nav() {
             </li>
           </ul> */}
           <div className="navbarLeft">
-            <button>
+            <button onClick={() => {
+                  handleClick("");
+                }}>
               <Link to="/" className="navLinks">
                 Home
               </Link>
@@ -148,7 +150,9 @@ function Nav() {
                   handleClick(item._id);
                 }}
               >
+                <Link className ="navLink" to="/">
                 {item.name}
+                </Link>
               </button>
             ))}
             <button>
