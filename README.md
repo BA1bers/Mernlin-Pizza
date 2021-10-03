@@ -3,7 +3,7 @@ U of A Bootcamp Group Project 3 Final Project
 
 ## Website Status
 
-![HTML](https://img.shields.io/website-up-down-green-red/http/mernlin-pizza.herokuapp.com.svg)
+[![HTML](https://img.shields.io/website-up-down-green-red/http/mernlin-pizza.herokuapp.com.svg)](https://mernlin-pizza.herokuapp.com/)
 
 ## Badge
 

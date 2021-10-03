@@ -110,6 +110,10 @@ button[disabled] {
   opacity: .8;
 }
 
+.backgroundImage {
+  background-image: url(/client/public/images/herophoto.png);
+}
+
 img {
   max-width: 100%;
 }

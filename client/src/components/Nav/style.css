@@ -3,15 +3,14 @@
     width: 100%;
     height: 113px;
     position: fixed;
-    overflow: visible;
     top: 0;
     background: var(--primary);
     z-index: 1;
-}
+    }
 
 .navbarContainer {
     position: relative;
-}
+    }
 
 .yellowBar {
     width: 100%;
@@ -29,7 +28,7 @@
     padding-bottom: 20px;
     justify-content: center;
     background: rgba(0, 48, 73, 1);
-}
+    }
 
 #resNameMERNlin {
     white-space: nowrap;
@@ -38,8 +37,8 @@
     font-weight: bold;
     font-size: 60px;
     margin-right: 80px;
-    color: rgba(247, 127, 0, 1);
-}
+    color: rgba(247,127,0,1)
+    }
 
 #resNamePizza {
     white-space: nowrap;
@@ -47,8 +46,8 @@
     font-style: normal;
     font-weight: bold;
     font-size: 60px;
-    color: rgba(247, 127, 0, 1);
-}
+    color: rgba(247,127,0,1);
+    }
 
 .signUp {
     white-space: nowrap;
@@ -59,12 +58,12 @@
     font-weight: bold;
     font-size: 25px;
     padding-right: 20px;
-    left: 1700px;
+    left: 1750px;
     margin-top: -130px;
-    color: rgba(247, 127, 0, 1);
-}
+    color: rgba(247,127,0,1);
+    }
 
-.logIn {
+    .logIn {
     white-space: nowrap;
     cursor: pointer;
     position: absolute;
@@ -72,10 +71,10 @@
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
-    left: 1850px;
+    left: 1875px;
     margin-top: -130px;
-    color: rgba(247, 127, 0, 1);
-}
+    color: rgba(247,127,0,1);
+    }
 
 .orderHistory {
     white-space: nowrap;
@@ -86,10 +85,10 @@
     font-weight: bold;
     font-size: 25px;
     padding-right: 20px;
-    left: 250px;
+    left: 1750px;
     margin-top: -130px;
-    color: rgba(247, 127, 0, 1);
-}
+    color: rgba(247,127,0,1);
+    }
 
 .logOut {
     white-space: nowrap;
@@ -99,12 +98,12 @@
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
-    left: 450px;
+    left: 1920px;
     margin-top: -130px;
-    color: rgba(247, 127, 0, 1);
-}
+    color: rgba(247,127,0,1);
+    }
 
-.logoCircle img {
+.logoCircle img{
     position: absolute;
     cursor: pointer;
     max-width: 100%;
@@ -123,7 +122,7 @@
     left: 180px;
     padding-left: 160px;
     transform: translateY(-20px);
-}
+    }
 
 .navbarLeft button {
     justify-content: space-between;
@@ -135,7 +134,7 @@
     font-size: 35px;
     padding: 4px 15px;
     margin-top: 25px;
-}
+    }
 
 .navLinks {
     justify-content: space-between;
@@ -147,7 +146,7 @@
     font-size: 35px;
     padding: 4px 15px;
     margin-top: 25px;
-}
+    }
 
 .navbarRight {
     position: absolute;
@@ -158,7 +157,7 @@
     list-style-type: none;
     padding-right: 30px;
     transform: translateY(-20px);
-}
+    }
 
 .navbarRight li {
     text-decoration: none;
@@ -168,20 +167,18 @@
     font-weight: 500;
     font-size: 35px;
     padding: 4px 15px;
-}
+    }
 
 .navbarName img {
     width: 220px;
     cursor: pointer;
-}
+    }
 
 .orderButton img {
     position: absolute;
-    overflow: visible;
     cursor: pointer;
     width: 200px;
     left: 35px;
     top: 760px;
-}
-
+    }
 /*Navbar CSS ends*/

@@ -8,7 +8,7 @@ import { useStoreContext } from '../../utils/GlobalState';
 import { UPDATE_CATEGORIES, UPDATE_CURRENT_CATEGORY } from '../../utils/actions';
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
-import "./style.css";
+import './style.css'
 
 function Nav() {
 
@@ -136,7 +136,9 @@ function Nav() {
             </li>
           </ul> */}
           <div className="navbarLeft">
-            <button>
+            <button onClick={() => {
+                  handleClick("");
+                }}>
               <Link to="/" className="navLinks">
                 Home
               </Link>
@@ -149,7 +151,9 @@ function Nav() {
                   handleClick(item._id);
                 }}
               >
+                <Link className ="navLink" to="/">
                 {item.name}
+                </Link>
               </button>
             ))}
             <button>
@@ -158,14 +162,12 @@ function Nav() {
               </Link>
             </button>
             <button>
-                About Us
+              About Us
             </button>
           </div>
         </div>
         <div className="orderButton">
-          <div id="orderNow">
-            <img src={OrderButton} alt="OrderButton" />
-          </div>
+          <img src={OrderButton} alt="OrderButton" />
         </div>
       </div>
       {showNavigation()}
