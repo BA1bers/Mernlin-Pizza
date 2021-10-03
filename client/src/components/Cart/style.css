@@ -1,6 +1,6 @@
 .cart {
   position: fixed;
-  top: 25%;
+  bottom: 10px;
   right: 0;
   min-width: 20%;
   max-width: 30%;
