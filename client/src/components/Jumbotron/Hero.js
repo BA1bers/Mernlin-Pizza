@@ -1,14 +1,34 @@
 import React from "react";
-import Heropic from '../Images/herophoto.png'
+import heropic1 from "../Images/Mernlin.png"
+
+import './style.css'
 
 function Hero() {
   return (
-      <div>
-        <h1>MERNlin's Pizza</h1>
-        <img src={Heropic} />
-        <p>The Most Magical Pizza in the world</p>
-      <button className='herobtn'>Order Now</button>
-      </div>
+    <div className="header" id="homePageHeader">
+    <div className="container">
+        <div className="row">
+            <div className="col-6">
+                <div className="headerDetails">
+                    <div className="headerSection">
+                        
+                        <h1>
+                            MERNlin's Pizza
+                        </h1>
+                        <p>
+                            The most magical pizza in the world
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className="col-6">
+                <div className="Merlinimg">
+                    <img src={heropic1} alt="merlin" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
       
   )
 }
