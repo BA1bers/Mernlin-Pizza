@@ -8,6 +8,7 @@ import { useStoreContext } from '../../utils/GlobalState';
 import { UPDATE_CATEGORIES, UPDATE_CURRENT_CATEGORY } from '../../utils/actions';
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
+
 import './style.css'
 
 function Nav() {
@@ -91,50 +92,6 @@ function Nav() {
           <Link to="/" className="logoCircle">
             <img src={MERNlinLogo} alt="MERNLinLogo" />
           </Link>
-          {/* <ul className="navbarLeft">
-            <li>
-              <Link to="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link>
-                Pizza
-              </Link>
-            </li>
-            <li>
-              <Link>
-                Appetizers
-              </Link>
-            </li>
-            <li>
-              <Link>
-                Salads
-              </Link>
-            </li>
-          </ul>
-          <ul className="navbarRight">
-            <li>
-              <Link>
-                Menu
-              </Link>
-            </li>
-            <li>
-              <Link>
-                Rewards
-              </Link>
-            </li>
-            <li>
-              <Link to="/ContactUs">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link>
-                About Us
-              </Link>
-            </li>
-          </ul> */}
           <div className="navbarLeft">
             <button onClick={() => {
                   handleClick("");
@@ -166,25 +123,9 @@ function Nav() {
             </button>
           </div>
         </div>
-        <div className="orderButton">
-          <img src={OrderButton} alt="OrderButton" />
-        </div>
       </div>
       {showNavigation()}
     </nav>
-
-    // <header className="flex-row px-1">
-    //   <h1>
-    //     <Link to="/">
-    //       <span role="img" aria-label="shopping bag">🍕</span>
-    //       MERNlin-Pizza
-    //     </Link>
-    //   </h1>
-
-    //   <nav>
-    //     
-    //   </nav>
-    // </header>
   );
 }
 
