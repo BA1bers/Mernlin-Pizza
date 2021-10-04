@@ -159,25 +159,8 @@ db.once('open', async () => {
       image: 'greekSalad.PNG',
       price: 6.99,
       quantity: 1
-    },
-    {
-      name: 'First Purchase',
-      category: categories[3]._id,
-      description:
-        'Juicy tomatoes, crisp cucumber, sliced red onion, green pepper, crumbly feta cheese and plump Kalamata olives.',
-      image: 'greekSalad.PNG',
-      price: 6.99,
-      quantity: 1
-    },
-    {
-      name: 'Greek',
-      category: categories[2]._id,
-      description:
-        'Juicy tomatoes, crisp cucumber, sliced red onion, green pepper, crumbly feta cheese and plump Kalamata olives.',
-      image: 'greekSalad.PNG',
-      price: 6.99,
-      quantity: 1
     }
+    
   ]);
 
   console.log('products seeded');
