@@ -1,13 +1,14 @@
 import React from "react";
-import {HeroContainer, HeroButton} from './HeroElement'
+import Heropic from '../Images/herophoto.png'
 
 function Hero() {
   return (
-      <HeroContainer>
+      <div>
         <h1>MERNlin's Pizza</h1>
+        <img src={Heropic} />
         <p>The Most Magical Pizza in the world</p>
-      <HeroButton>Order Now</HeroButton>
-      </HeroContainer>
+      <button className='herobtn'>Order Now</button>
+      </div>
       
   )
 }
