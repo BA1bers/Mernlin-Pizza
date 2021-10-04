@@ -1,5 +1,5 @@
 import React from "react";
-
+import {HeroContainer, HeroButton} from './HeroElement'
 
 function Hero() {
   return (
