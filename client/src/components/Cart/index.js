@@ -89,7 +89,11 @@ const Cart = () => {
                   Checkout
               </button>
                 :
-                <span>(log in to check out)</span>
+                <div>
+                <button onClick={submitCheckout}>
+                  Checkout
+              </button>
+                <span>(Log in to get 20% discount)</span></div>
             }
           </div>
         </div>
