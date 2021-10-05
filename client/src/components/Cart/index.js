@@ -42,12 +42,34 @@ const Cart = () => {
   }
 
   function calculateTotal() {
+    // const userData = useQuery(QUERY_USER);
     let sum = 0;
+    const userData = 1;
     state.cart.forEach((item) => {
-      sum += (item.price / 100) * 80 * item.purchaseQuantity;
+      if (userData === null) {
+        sum += (item.price / 100) * 80 * item.purchaseQuantity;
+      } else {
+        sum += item.price * item.purchaseQuantity;
+      }
     });
     return sum.toFixed(2);
   }
+
+  // function calculateTotal() {
+  //   const { data } = useQuery(QUERY_USER);
+  //   let sum;
+  //   if (data) {
+  //     state.cart.forEach((item) => {
+  //       sum += (item.price / 100) * 80 * item.purchaseQuantity;
+  //     });
+  //   } else {
+  //     state.cart.forEach((item) => {
+  //       sum += (item.price / 100) * 20 * item.purchaseQuantity;
+  //     });
+  //   }
+
+  //   return sum.toFixed(2);
+  // }
 
   function submitCheckout() {
     const productIds = [];
