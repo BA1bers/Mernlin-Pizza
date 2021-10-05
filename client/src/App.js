@@ -34,6 +34,7 @@ function App() {
         <div>
           <StoreProvider>
             <Nav />
+            <Footer />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/login" component={Login} />
@@ -45,7 +46,6 @@ function App() {
               <Route component={NoMatch} />
             </Switch>
           </StoreProvider>
-          <Footer />
         </div>
       </Router>
     </ApolloProvider>

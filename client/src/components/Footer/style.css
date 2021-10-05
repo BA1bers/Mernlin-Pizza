@@ -1,9 +1,10 @@
 /*Footer begins*/
-mainFooter {
+.mainFooter {
     width: 100%;
     height: 100px;
     position: absolute;
-    background: var(--primary);
+    background: #003049;
+    bottom: 0;
     }
 
 .footerContainer {
