@@ -1,8 +1,8 @@
 :root {
   --primary: #003049;
-  --secondary: #FCBF49;
+  --secondary: #fcbf49;
   --tertiary: #413c58;
-  --light: #F77F00;
+  --light: #f77f00;
   --dark: #413c58;
   --error: #fcbf49ff;
   --background: rgba(234, 226, 183, 1);
@@ -13,7 +13,6 @@
 * {
   box-sizing: border-box;
 }
-
 html,
 body {
   min-height: 100%;
@@ -93,7 +92,7 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
@@ -102,23 +101,23 @@ button {
 }
 
 button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 button[disabled] {
   cursor: default;
-  opacity: .8;
+  opacity: 0.8;
 }
 
-.backgroundImage {
+/* .backgroundImage {
   background-image: url(/client/public/images/herophoto.png);
-}
+} */
 
 img {
   max-width: 100%;
 }
 
-span[role="img"] {
+span[role='img'] {
   cursor: default;
 }
 
@@ -137,11 +136,11 @@ input {
 
 input:focus {
   border: 1px solid var(--secondary);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .container {
-  width: 85%;
+  width: 100%;
   max-width: 1200px;
   margin-left: auto;
   margin-top: 250px;

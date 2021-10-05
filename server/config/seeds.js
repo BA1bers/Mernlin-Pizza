@@ -1,5 +1,5 @@
 const db = require('./connection');
-const { User, Product, Category } = require('../models');
+const { User, Product, Category, About } = require('../models');
 
 db.once('open', async () => {
   await Category.deleteMany();
@@ -7,8 +7,7 @@ db.once('open', async () => {
   const categories = await Category.insertMany([
     { name: 'Appetizers' },
     { name: 'Pizza' },
-    { name: 'Salads' },
-    // { name: 'Rewards' }
+    { name: 'Salads' }
   ]);
 
   console.log('categories seeded');
@@ -159,24 +158,6 @@ db.once('open', async () => {
       image: 'greekSalad.PNG',
       price: 6.99,
       quantity: 1
-    },
-    {
-      name: 'First Purchase',
-      category: categories[3]._id,
-      description:
-        'Juicy tomatoes, crisp cucumber, sliced red onion, green pepper, crumbly feta cheese and plump Kalamata olives.',
-      image: 'greekSalad.PNG',
-      price: 6.99,
-      quantity: 1
-    },
-    {
-      name: 'Greek',
-      category: categories[2]._id,
-      description:
-        'Juicy tomatoes, crisp cucumber, sliced red onion, green pepper, crumbly feta cheese and plump Kalamata olives.',
-      image: 'greekSalad.PNG',
-      price: 6.99,
-      quantity: 1
     }
   ]);
 
@@ -188,15 +169,11 @@ db.once('open', async () => {
     firstName: 'admin',
     lastName: 'admin',
     email: 'admin@testmail.com',
-    password: 'pass1234',
-    orders: [
-      {
-        products: [products[0]._id, products[0]._id, products[1]._id]
-      }
-    ]
+    password: 'pass1234'
   });
 
   console.log('users seeded');
+
 
   process.exit();
 });
