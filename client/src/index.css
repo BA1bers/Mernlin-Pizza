@@ -110,9 +110,9 @@ button[disabled] {
   opacity: .8;
 }
 
-.backgroundImage {
+/* .backgroundImage {
   background-image: url(/client/public/images/herophoto.png);
-}
+} */
 
 img {
   max-width: 100%;
@@ -141,7 +141,7 @@ input:focus {
 }
 
 .container {
-  width: 85%;
+  width: 100%;
   max-width: 1200px;
   margin-left: auto;
   margin-top: 250px;

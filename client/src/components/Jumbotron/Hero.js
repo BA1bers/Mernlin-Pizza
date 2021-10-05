@@ -5,8 +5,8 @@ import './style.css'
 
 function Hero() {
   return (
-    <div className="header" id="homePageHeader">
-    <div className="container">
+    <div className="heroHeader" id="homePageHeader">
+    <div className="heroContainer">
         <div className="row">
             <div className="col-6">
                 <div className="headerDetails">
@@ -30,6 +30,7 @@ function Hero() {
     </div>
 </div>
       
+
   )
 }
 

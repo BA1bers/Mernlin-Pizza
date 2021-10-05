@@ -8,16 +8,17 @@
     font-family: 'sans-serif';
   }
 
-.header {
+.heroHeader {
     width: 100%;
     height: 100vh;
-    background: url("/src/images/herophoto.png");
+    background: url("../Images/herophoto.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .container {
+  .heroContainer {
     width: 1200px;
     margin: 0 auto;
+    z-index:1;
   }
   .row {
     display: flex;
@@ -31,5 +32,25 @@
     align-items: center;
     height: 100vh;
     width: 100%;
-    color: #EAE2B7;
+    color: #F77F00;
+  }
+
+  .headerSection h1 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  .headerSection p {
+    font-size: 25px;
+    font-weight: 100;
+    color:#F77F00;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+  .Merlinimg img {
+    padding: 0 30px;
+    margin-top: 150px;
+    height: 550px;
+    margin-left: 150px;
   }

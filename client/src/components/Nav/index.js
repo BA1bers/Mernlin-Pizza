@@ -9,6 +9,7 @@ import { UPDATE_CATEGORIES, UPDATE_CURRENT_CATEGORY } from '../../utils/actions'
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 
+
 import './style.css'
 
 function Nav() {
@@ -89,14 +90,14 @@ function Nav() {
           </div>
         </div>
         <div className="yellowBar">
-          <Link to="/" className="logoCircle">
+          <Link to="/Hero" className="logoCircle">
             <img src={MERNlinLogo} alt="MERNLinLogo" />
           </Link>
           <div className="navbarLeft">
             <button onClick={() => {
                   handleClick("");
                 }}>
-              <Link to="/" className="navLinks">
+              <Link to="/Hero" className="navLinks">
                 Home
               </Link>
             </button>
