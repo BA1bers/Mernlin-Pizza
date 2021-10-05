@@ -11,6 +11,7 @@
   padding: .5rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
   border-bottom-left-radius: .5rem;
+  z-index: 1;
 }
 
 .cart h2 {
@@ -18,6 +19,7 @@
   border-bottom: 1px solid var(--dark);
   padding-bottom: .5rem;
   margin: 1rem 0;
+  z-index: 1;
 }
 
 .cart .close {
@@ -26,38 +28,44 @@
   right: .5rem;
   cursor: pointer;
   color: var(--tertiary);
+  z-index: 1;
 }
 
 .cart .close:hover {
   text-decoration: underline;
+  z-index: 1;
 }
 
 .cart-closed {
   position: fixed;
   top: 2%;
   right: 1%;
+  margin-top: 17px;
   font-size: 2rem;
   cursor: pointer;
-  background-color: var(--secondary);
   border-radius: 50%;
   padding: .25rem;
-  width: 50px;
+  width: 120px;
   height: 50px;
+  z-index: 1;
 }
 
 .cart-closed:hover {
   transform: rotate(8deg);
+  z-index: 1;
 }
 
 .cart img {
   width: 70px;
   margin-right: 1rem;
+  z-index: 1;
 }
 
 .cart input {
   width: 50px;
   padding: 0;
   margin: 0 .5rem 1rem 0;
+  z-index: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -67,10 +75,12 @@
     max-height: auto;
     box-shadow: none;
     background-color: inherit;
+    z-index: 1;
   }
 
   .cart-closed {
     position: relative;
     margin: 0 auto;
+    z-index: 1;
   }
 }
