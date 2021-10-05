@@ -1,5 +1,5 @@
 const db = require('./connection');
-const { User, Product, Category } = require('../models');
+const { User, Product, Category, About } = require('../models');
 
 db.once('open', async () => {
   await Category.deleteMany();
@@ -7,8 +7,7 @@ db.once('open', async () => {
   const categories = await Category.insertMany([
     { name: 'Appetizers' },
     { name: 'Pizza' },
-    { name: 'Salads' },
-    // { name: 'Rewards' }
+    { name: 'Salads' }
   ]);
 
   console.log('categories seeded');
@@ -170,15 +169,47 @@ db.once('open', async () => {
     firstName: 'admin',
     lastName: 'admin',
     email: 'admin@testmail.com',
-    password: 'pass1234',
-    orders: [
-      {
-        products: [products[0]._id, products[0]._id, products[1]._id]
-      }
-    ]
+    password: 'pass1234'
   });
 
   console.log('users seeded');
+
+  await About.deleteMany();
+
+  await About.create({
+    fullName: 'Paul Mernlin',
+    keyword: 'Founder/Owner',
+    description: 'Mernlin the owner of MERNlin’s Pizza wanted to bring his store into a new stage by adding in digital online ordering website application. MERNlin’s Pizza was started in 2000 and has one historic location in downtown Scottsdale. Family own sense day one, we include everyone into our pizza family',
+    image: './',
+  },
+  {
+    fullName: 'Brent Albers',
+    keyword: 'Frontend Styling, Logo Designeer',
+    description: 'TBD',
+    image: './',
+  },
+  {
+    fullName: 'Bryan Daniel',
+    keyword: 'Backend, Middlewear',
+    description: 'TBD',
+    image: './',
+  },
+  {
+    fullName: 'Bryce Sitler',
+    keyword: 'Founder/Owner',
+    description: 'TBD',
+    image: './',
+  },
+  {
+    fullName: 'Robert Fluke',
+    keyword: 'Founder/Owner',
+    description: 'TBD',
+    image: './',
+  }
+  );
+
+  console.log('about seeded')
+
 
   process.exit();
 });
