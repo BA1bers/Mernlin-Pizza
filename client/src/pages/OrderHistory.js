@@ -14,8 +14,8 @@ function OrderHistory() {
 
   return (
     <>
-      <div className="container my-1">
-        <Link to="/">← Back to Products</Link>
+      <div className="container">
+        <Link to="/">← Back to Home page</Link>
 
         {user && (
           <>
