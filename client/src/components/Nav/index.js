@@ -12,7 +12,7 @@ import {
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 
-import './style.css';
+import './style.css'
 
 function Nav() {
   const [state, dispatch] = useStoreContext();
@@ -90,16 +90,15 @@ function Nav() {
           </div>
         </div>
         <div className="yellowBar">
-          <Link to="/" className="logoCircle">
+          <Link to="/Hero" className="logoCircle">
             <img src={MERNlinLogo} alt="MERNLinLogo" />
           </Link>
           <div className="navbarLeft">
-            <button
-              onClick={() => {
-                handleClick('');
-              }}
-            >
-              <Link to="/" className="navLinks">
+            <button onClick={() => {
+                  handleClick("");
+                }}>
+              <Link to="/Hero" className="navLinks">
+
                 Home
               </Link>
             </button>
