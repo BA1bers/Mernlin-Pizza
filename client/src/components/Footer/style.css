@@ -12,12 +12,14 @@
     height: 100px;
     align-items: center;
     justify-content: space-between;
+    bottom: 0;
     }
 
 .footerUl {
     width: 100%;
     display: flex;
     justify-content: center;
+    bottom: 0;
     }
 
 /*Footer ends*/
