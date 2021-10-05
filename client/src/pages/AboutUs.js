@@ -1,16 +1,14 @@
-import React from "react";
-import AboutList from "../components/AboutUs";
+import React from 'react';
 
-
-const AboutUs = () => {
-
+function AboutGroup() {
 
     return (
-        <div className="container backgroundImage">
-            {console.log(AboutList)}
-            TESTSTESTTESST
+        <div className="container">
+            <section>
+                <dev>Hellllo</dev>
+            </section>
         </div>
     );
-};
+}
 
-export default AboutUs;
+export default AboutGroup;

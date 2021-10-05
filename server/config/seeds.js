@@ -174,42 +174,6 @@ db.once('open', async () => {
 
   console.log('users seeded');
 
-  await About.deleteMany();
-
-  await About.create({
-    fullName: 'Paul Mernlin',
-    keyword: 'Founder/Owner',
-    description: 'Mernlin the owner of MERNlin’s Pizza wanted to bring his store into a new stage by adding in digital online ordering website application. MERNlin’s Pizza was started in 2000 and has one historic location in downtown Scottsdale. Family own sense day one, we include everyone into our pizza family',
-    image: './',
-  },
-  {
-    fullName: 'Brent Albers',
-    keyword: 'Frontend Styling, Logo Designeer',
-    description: 'TBD',
-    image: './',
-  },
-  {
-    fullName: 'Bryan Daniel',
-    keyword: 'Backend, Middlewear',
-    description: 'TBD',
-    image: './',
-  },
-  {
-    fullName: 'Bryce Sitler',
-    keyword: 'Founder/Owner',
-    description: 'TBD',
-    image: './',
-  },
-  {
-    fullName: 'Robert Fluke',
-    keyword: 'Founder/Owner',
-    description: 'TBD',
-    image: './',
-  }
-  );
-
-  console.log('about seeded')
-
 
   process.exit();
 });
