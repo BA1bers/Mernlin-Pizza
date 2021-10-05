@@ -13,9 +13,6 @@
 * {
   box-sizing: border-box;
 }
-.moveme {
-  z-index: 1;
-}
 html,
 body {
   min-height: 100%;
