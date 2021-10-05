@@ -121,7 +121,11 @@ function Nav() {
                 Contact
               </Link>
             </button>
-            <button>About Us</button>
+            <button>
+              <Link to="/AboutUs" className="navLinks">
+              About Us
+              </Link>
+            </button>
           </div>
         </div>
       </div>
