@@ -1,19 +1,20 @@
 import React, { useEffect } from 'react';
-import MERNlinLogo from '../Images/MERNlinLogo.png'
-import OrderButton from '../Images/orderNowButton.png'
-import Auth from "../../utils/auth";
-import { Link } from "react-router-dom";
+import MERNlinLogo from '../Images/MERNlinLogo.png';
+import OrderButton from '../Images/orderNowButton.png';
+import Auth from '../../utils/auth';
+import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/react-hooks';
 import { useStoreContext } from '../../utils/GlobalState';
-import { UPDATE_CATEGORIES, UPDATE_CURRENT_CATEGORY } from '../../utils/actions';
+import {
+  UPDATE_CATEGORIES,
+  UPDATE_CURRENT_CATEGORY,
+} from '../../utils/actions';
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
-
 
 import './style.css'
 
 function Nav() {
-
   const [state, dispatch] = useStoreContext();
 
   const { categories } = state;
@@ -24,35 +25,34 @@ function Nav() {
     if (categoryData) {
       dispatch({
         type: UPDATE_CATEGORIES,
-        categories: categoryData.categories
+        categories: categoryData.categories,
       });
-      categoryData.categories.forEach(category => {
+      categoryData.categories.forEach((category) => {
         idbPromise('categories', 'put', category);
       });
     } else if (!loading) {
-      idbPromise('categories', 'get').then(categories => {
+      idbPromise('categories', 'get').then((categories) => {
         dispatch({
           type: UPDATE_CATEGORIES,
-          categories: categories
+          categories: categories,
         });
       });
     }
   }, [categoryData, loading, dispatch]);
 
-  const handleClick = id => {
+  const handleClick = (id) => {
     dispatch({
       type: UPDATE_CURRENT_CATEGORY,
-      currentCategory: id
+      currentCategory: id,
     });
   };
-
 
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
         <ul className="flex-row">
           <li className="mx-1">
-            <Link to="/orderHistory" className="orderHistory">
+            <Link to="/OrderHistory" className="orderHistory">
               Order History
             </Link>
           </li>
@@ -98,19 +98,20 @@ function Nav() {
                   handleClick("");
                 }}>
               <Link to="/Hero" className="navLinks">
+
                 Home
               </Link>
             </button>
             <h2></h2>
-            {categories.map(item => (
+            {categories.map((item) => (
               <button
                 key={item._id}
                 onClick={() => {
                   handleClick(item._id);
                 }}
               >
-                <Link className ="navLink" to="/">
-                {item.name}
+                <Link className="navLink" to="/">
+                  {item.name}
                 </Link>
               </button>
             ))}
@@ -120,7 +121,9 @@ function Nav() {
               </Link>
             </button>
             <button>
+              <Link to="/AboutUs" className="navLinks">
               About Us
+              </Link>
             </button>
           </div>
         </div>

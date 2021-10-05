@@ -11,6 +11,7 @@ import Signup from "./pages/Signup";
 import Nav from "./components/Nav";
 import { StoreProvider } from "./utils/GlobalState";
 import ContactForm from "./pages/ContactUs";
+import AboutGroup from "./pages/AboutUs";
 import Success from "./pages/Success";
 import OrderHistory from "./pages/OrderHistory";
 import Footer from "./components/Footer/Footer";
@@ -40,6 +41,7 @@ function App() {
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/success" component={Success} />
               <Route exact path="/contactUs" component={ContactForm} />
+              <Route exact path="/aboutUs" component={AboutGroup} />
               <Route exact path="/orderHistory" component={OrderHistory} />
               <Route exact path="/products/:id" component={Detail} />
               <Route component={NoMatch} />
