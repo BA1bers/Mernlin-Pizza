@@ -78,8 +78,9 @@
 
 .orderHistory {
     white-space: nowrap;
-    position: absolute;
+    position: relative;
     cursor: pointer;
+    float: left;
     font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -93,12 +94,12 @@
 .logOut {
     white-space: nowrap;
     cursor: pointer;
-    position: absolute;
+    position: relative;
+    float: right;
     font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
-    left: 1920px;
     margin-top: -130px;
     color: rgba(247,127,0,1);
     }
