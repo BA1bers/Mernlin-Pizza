@@ -1,6 +1,7 @@
 import React from 'react';
 import '../components/AboutUs/style.css'
 import TheTeam from './TheTeam'
+import Bryce from '../components/Images/brycesphoto.jpg'
 
 function AboutGroup() {
 
@@ -12,13 +13,14 @@ function AboutGroup() {
                 <h3>Founder and Owner</h3>
                 <p>Paul Mernlin the owner of MERNlin’s Pizza wanted to bring his store into a new stage by adding in digital online ordering website application. MERNlin’s Pizza was started in 2000 and has one historic location in downtown Scottsdale. Family own sense day one, we include everyone into our pizza family.</p>
             </div>
+            <h1>Meet The Team</h1>
             <div className="teammateWrapper">
-                <TheTeam teamImage="../../images/mozzerellaSticks.png" memberName="Robert Fuke" teamRole="Website Co-Designer Backend" personal="" />
+                <TheTeam teamImage="../../images/robertsphoto.jpg" memberName="Robert Fuke" teamRole="Website Co-Designer Backend" personal="Twenty years of Professional experience in computers and software systems. Now is the time for a lifestyle change and Code baking!" />
                 <TheTeam teamImage="../../images/Bryan'sPhoto.jpg" memberName="Bryan Daniel" teamRole="Website Co-Designer Frontend/Backend" personal="Started working in the microchip industry as an electronic test engineer. Sense returned to school to switch to full stack web developer." />
             </div>
             <div className="teammateWrapper">
-                <TheTeam teamImage="../../images/mozzerellaSticks.png" memberName="Bryce Sitler" teamRole="Website Co-Designer Frontend" personal="" />
-                <TheTeam teamImage="../../images/brentsphoto.jpg" memberName="Brent Albers" teamRole="Website Co-Designer Frontend" personal="Engineer turned to web developer. Aspiring frontend developer who wants to build aesthetically pleasing designs with polished UI systems" />
+                <TheTeam teamImage={Bryce} memberName="Bryce Sitler" teamRole="Website Co-Designer Frontend" personal="Started as QA about 7 months ago for a company called Credence llc. Wanted to climb the ranks of the company to become a Dev. Now thanks to Trilogy this is possible! P.S Oliver Grey Sitler is due on January 26th 2022." />
+                <TheTeam teamImage="../../images/brentsphoto.jpg" memberName="Brent Albers" teamRole="Website Co-Designer Frontend" personal="Started as a mechanical engineer with no prior knowlege of coding. Changed career paths to web development.  Aspiring frontend developer who wants to build aesthetically pleasing designs with polished UI systems" />
             </div>
         </div>
     );
