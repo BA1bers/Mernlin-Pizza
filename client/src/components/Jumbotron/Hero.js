@@ -1,9 +1,9 @@
 import React from "react";
-import heropic1 from "../Images/Mernlin.png"
 import wings from "../Images/buffaloWingshome.png"
 import cheesy from "../Images/20.png"
-
 import Fried from "../Images/barstool.png"
+
+
 
 
 
