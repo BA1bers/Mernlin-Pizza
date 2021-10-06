@@ -110,7 +110,7 @@ function Nav() {
                   handleClick(item._id);
                 }}
               >
-                <Link className="navLink" to="/">
+                <Link className="navLinks" to="/">
                   {item.name}
                 </Link>
               </button>
