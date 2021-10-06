@@ -1,13 +1,13 @@
 import React from 'react'
 
-function TheTeam() {
+function TheTeam({teamImage, memberName, teamRole, personal}) {
     return (
         <div>
-            <img src="../../images/mozzerellaSticks.png"></img>
+            <img src={teamImage}></img>
             <div className="teamMemberAbout">
-                <h3 className="teammmateName">Robert Fuke</h3>
-                <h4 className="teamRole">Website Co-Designer Backend</h4>
-                <p>TBD</p>
+                <h3 className="teammmateName">{memberName}</h3>
+                <h4 className="teamRole">{teamRole}</h4>
+                <p>{personal}</p>
             </div>
         </div>
     )

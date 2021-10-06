@@ -7,19 +7,18 @@ function AboutGroup() {
     return (
         <div className="aboutContainer">
             <div>
-                <img src="../../images/MernlinHQ.jpg"></img>
-                <img src="../../images/TheGreatAndPowerfulMernlin.png"></img>
+                <img src="../../images/Company.png"></img>
                 <h2>Paul Mernlin</h2>
                 <h3>Founder and Owner</h3>
                 <p>Paul Mernlin the owner of MERNlin’s Pizza wanted to bring his store into a new stage by adding in digital online ordering website application. MERNlin’s Pizza was started in 2000 and has one historic location in downtown Scottsdale. Family own sense day one, we include everyone into our pizza family.</p>
             </div>
             <div className="teammateWrapper">
-                <TheTeam />
-                <TheTeam />
+                <TheTeam teamImage="../../images/mozzerellaSticks.png" memberName="Robert Fuke" teamRole="Website Co-Designer Backend" personal="" />
+                <TheTeam teamImage="../../images/Bryan'sPhoto.jpg" memberName="Bryan Daniel" teamRole="Website Co-Designer Frontend/Backend" personal="Started working in the microchip industry as an electronic test engineer. Sense returned to school to switch to full stack web developer." />
             </div>
             <div className="teammateWrapper">
-                <TheTeam />
-                <TheTeam />
+                <TheTeam teamImage="../../images/mozzerellaSticks.png" memberName="Bryce Sitler" teamRole="Website Co-Designer Frontend" personal="" />
+                <TheTeam teamImage="../../images/brentsphoto.jpg" memberName="Brent Albers" teamRole="Website Co-Designer Frontend" personal="Engineer turned to web developer. Aspiring frontend developer who wants to build aesthetically pleasing designs with polished UI systems" />
             </div>
         </div>
     );
