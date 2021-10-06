@@ -2,6 +2,7 @@ import React from "react";
 import wings from "../Images/buffaloWingshome.png"
 import cheesy from "../Images/20.png"
 import Fried from "../Images/barstool.png"
+import Cart from "../Cart";
 
 
 
@@ -56,6 +57,7 @@ function Hero() {
           </div>
         </article>
       </div>
+      <Cart />
     </div>
 
 
