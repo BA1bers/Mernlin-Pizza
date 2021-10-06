@@ -22,20 +22,21 @@ U of A Bootcamp Group Project 3 Final Project
 
 ## Description
 
-PLACEHOLDER
+MERNlin's Pizza is an application built for a resturant order system. It allows users to create account and that can be logged in or out of. The Pizza, Appetizer, and Salad nav buttons use react to bring up the products offered in those catagories. The contact us nav button takes indiviuals to a form that allows them to input there information and a question to the site owner. The About Us Nav button take the user to a bio of the owner and creation of MERNlin's Pizza, also a short bio of each of the member that built the application. Finally the Home button which shows deals and information on hot items.
 
 ### Future Updates
 
-PLACEHHOLDER
+- Build you own Pizza
+- Rewards Program
+- Membership Points
 
 
 ## Table of Contents
 
 - [Usage](#usage)
 - [Installation](#installation)
-- [Walkthrough](#walkthrough)
+- [Screenshot](#screenshot)
 - [Languages](#languages)
-- [Tests](#tests)
 - [License](#license)
 - [Operating System](#operating-system)
 - [Credits](#credits)
@@ -43,26 +44,60 @@ PLACEHHOLDER
 
 ## Usage
 
-PLACEHOLDER
+Clone or fork our Repo and navigate to the root folder in the terminal. At this point run the command npm install, after this completes run the command npm run seed, finally once that is completed run the command npm run start:dev this will start the backend and frontend allowing a local host version at which point you can build and edit your own code.
 
 ## Installation
 
-- npm i
+- npm install
+    - graphql
+    - if-env
+    - react-native
+    - nodemon
+    - server side
+        - apollo-server-express
+        - bcrypt
+        - express
+        - jsonwebtoken
+        - mongoose
+        -stripe
+    - client side
+        - apollo/react-hooks
+        - stripe/stripe-js
+        - testing-library/jest-dom
+        - testing-library/react
+        - testing-library?user-event
+        - apollo-boost
+        - apollo-link-context
+        - graphql
+        - graphql-tag
+        - jwt-decode
+        - react
+        - react-dom
+        - react-native
+        - react-router-dom
+        - react-scripts
+- npm run seed
+- npm run start:dev
 
-## Walkthrough or Screenshot
+## Screenshot
 
-PLACEHOLDER
+![Home Page](client/src/components/Images/homePage.PNG)
+![Sign Up](client/src/components/Images/signUp.PNG)
+![Log In](client/src/components/Images/login.PNG)
+![Appetizers](client/src/components/Images/appetizers.PNG)
+![Pizza](client/src/components/Images/pizza.PNG)
+![Salads](client/src/components/Images/salads.PNG)
+![Contact](client/src/components/Images/contact.PNG)
+![About Us](client/src/components/Images/about.PNG)
 
 ## Langauges
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=plastic&logo=html5&logoColor=white)     ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=plastic&logo=css3&logoColor=white)     ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black)
 
-## Tests
-
-
 
 ## License
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
 
 Copyright (c) 2021
 
@@ -72,7 +107,11 @@ Copyright (c) 2021
 
 ## Credits
 
-PLACEHOLDER
+- University of Arizona Teacher
+- University of Arizona TA's
+- University of Arizona Tutor's
+- Classmates who helped trouble shoot
+- Team MERNlin-Pizza
 
 ## Questions
 

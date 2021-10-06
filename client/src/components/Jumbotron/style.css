@@ -78,8 +78,8 @@
   .Feature {
     margin: 20px;
     flex: 1;
-    background: ;
-    color: #003049;
+    background-color:#003049 ;
+    color: #fcbf49;
   }
   
   .Feature img {

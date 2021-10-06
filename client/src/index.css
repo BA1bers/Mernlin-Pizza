@@ -115,6 +115,7 @@ button[disabled] {
 
 img {
   max-width: 100%;
+  margin: 0;
 }
 
 span[role='img'] {
@@ -147,17 +148,17 @@ input:focus {
   margin-right: auto;
 }
 
-.flex-row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .space-between {
   justify-content: space-between;
 }
 
 .flex-end {
   justify-content: flex-end;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .mx-1 {

@@ -1,8 +1,6 @@
 import React from "react";
-import heropic1 from "../Images/Mernlin.png"
 import wings from "../Images/buffaloWingshome.png"
 import cheesy from "../Images/20.png"
-
 import Fried from "../Images/barstool.png"
 
 
@@ -53,7 +51,7 @@ function Hero() {
           <img src={Fried} alt="Barstool Pizza" />
           <div class="Feature-bio">
             <h3 class="Feature-name">Feedback</h3>
-            <h4 class="Feature-role"></h4>
+            <h4 class="Feature-role">Barstool Pizza</h4>
             <p>Barstool rated our pizza 10/10! Be sure to visit our contact page and let us know what you think!</p>
           </div>
         </article>
