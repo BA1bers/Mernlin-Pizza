@@ -81,7 +81,14 @@ Clone or fork our Repo and navigate to the root folder in the terminal. At this 
 
 ## Screenshot
 
-PLACEHOLDER
+![Home Page](client/src/components/Images/homePage.PNG)
+![Sign Up](client/src/components/Images/signUp.PNG)
+![Log In](client/src/components/Images/login.PNG)
+![Appetizers](client/src/components/Images/appetizers.PNG)
+![Pizza](client/src/components/Images/pizza.PNG)
+![Salads](client/src/components/Images/salads.PNG)
+![Contact](client/src/components/Images/contact.PNG)
+![About Us](client/src/components/Images/about.PNG)
 
 ## Langauges
 
@@ -90,6 +97,7 @@ PLACEHOLDER
 
 ## License
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
 
 Copyright (c) 2021
 
