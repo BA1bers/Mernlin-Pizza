@@ -35,7 +35,7 @@ MERNlin's Pizza is an application built for a resturant order system. It allows 
 
 - [Usage](#usage)
 - [Installation](#installation)
-- [Walkthrough](#walkthrough)
+- [Screenshot](#screenshot)
 - [Languages](#languages)
 - [License](#license)
 - [Operating System](#operating-system)
@@ -79,7 +79,7 @@ Clone or fork our Repo and navigate to the root folder in the terminal. At this 
 - npm run seed
 - npm run start:dev
 
-## Walkthrough or Screenshot
+## Screenshot
 
 PLACEHOLDER
 
