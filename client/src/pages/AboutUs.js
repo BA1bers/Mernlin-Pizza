@@ -1,4 +1,5 @@
 import React from 'react';
+import Bryce from "../components/Images/bryce.jpeg"
 
 function AboutGroup() {
 
@@ -23,7 +24,7 @@ function AboutGroup() {
                     <h4>Website Co-Designer Backend</h4></div>
                     <p>TBD</p>
                 <div>
-                    <img></img>
+                    <img src={Bryce}></img>
                     <h3>Bryce Sitler</h3>
                     <h4>Website Co-Designer Frontend</h4></div>
                     <p>TBD</p>
@@ -33,7 +34,9 @@ function AboutGroup() {
                     <h4>Website Co-Designer Backend</h4></div>
                     <p>TBD</p>
             </div>
+            
         </div>
+        
     );
 }
 

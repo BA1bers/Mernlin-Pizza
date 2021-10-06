@@ -7,6 +7,7 @@ import Fried from "../Images/barstool.png"
 
 
 
+
 import './style.css'
 
 function Hero() {
