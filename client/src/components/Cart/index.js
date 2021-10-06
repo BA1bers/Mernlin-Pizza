@@ -9,8 +9,6 @@ import OrderButton from '../Images/orderNowButton.png';
 import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import './style.css';
-import { useQuery } from '@apollo/react-hooks';
-import { QUERY_USER } from '../../utils/queries';
 
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
@@ -41,35 +39,21 @@ const Cart = () => {
     dispatch({ type: TOGGLE_CART });
   }
 
-  function calculateTotal() {
-    // const userData = useQuery(QUERY_USER);
-    let sum = 0;
-    const userData = 1;
-    state.cart.forEach((item) => {
-      if (userData === null) {
-        sum += (item.price / 100) * 80 * item.purchaseQuantity;
-      } else {
-        sum += item.price * item.purchaseQuantity;
-      }
+  function calculateDis() {
+      let sum = 0;
+      state.cart.forEach((item) => {
+       sum += (item.price * 0.8)  * item.purchaseQuantity;
     });
     return sum.toFixed(2);
   }
 
-  // function calculateTotal() {
-  //   const { data } = useQuery(QUERY_USER);
-  //   let sum;
-  //   if (data) {
-  //     state.cart.forEach((item) => {
-  //       sum += (item.price / 100) * 80 * item.purchaseQuantity;
-  //     });
-  //   } else {
-  //     state.cart.forEach((item) => {
-  //       sum += (item.price / 100) * 20 * item.purchaseQuantity;
-  //     });
-  //   }
-
-  //   return sum.toFixed(2);
-  // }
+  function calculateTotal() {
+    let sum = 0;
+    state.cart.forEach((item) => {
+      sum += item.price * item.purchaseQuantity;
+    });
+    return sum.toFixed(2);
+  }
 
   function submitCheckout() {
     const productIds = [];
@@ -106,14 +90,20 @@ const Cart = () => {
           ))}
 
           <div className="flex-row space-between">
-            <strong>Total: ${calculateTotal()}</strong>
+            
 
             {Auth.loggedIn() ? (
+              <div>
+             
+              <strong>Total: ${calculateDis()}</strong>
+              <span>  ( 20% discount )</span><br />
               <button onClick={submitCheckout}>Checkout</button>
+              </div>
             ) : (
               <div>
-                <button onClick={submitCheckout}>Checkout</button>
-                <span>(SignUp to get 20% discount)</span>
+                <button onClick={submitCheckout}>Checkout</button><br />
+                <span> (SignUp to get 20% discount)</span>
+                <strong>Total: ${calculateTotal()}</strong>
               </div>
             )}
           </div>
