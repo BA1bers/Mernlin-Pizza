@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Cart from "../components/Cart";
 
 import { validateEmail } from '../utils/helpers';
 
@@ -77,6 +78,7 @@ function ContactForm() {
           <button data-testid="button" type="submit">Submit</button>
         </form>
       </section>
+      <Cart />
       </div>
     );
   }
