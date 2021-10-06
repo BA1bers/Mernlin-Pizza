@@ -96,7 +96,7 @@ const Cart = () => {
               <div>
              
               <strong>Total: ${calculateDis()}</strong>
-              <span>  ( 20% discount )</span><br />
+              <span>  ( 20 discount )</span><br />
               <button onClick={submitCheckout}>Checkout</button>
               </div>
             ) : (
