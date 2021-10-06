@@ -9,8 +9,6 @@ import OrderButton from '../Images/orderNowButton.png';
 import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import './style.css';
-import { useQuery } from '@apollo/react-hooks';
-import { QUERY_USER } from '../../utils/queries';
 
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
