@@ -3,6 +3,7 @@ import ProductList from "../components/ProductList";
 import Cart from "../components/Cart";
 import { useStoreContext } from '../utils/GlobalState';
 import Jumbotron from "../components/Jumbotron/Hero";
+import '../components/Jumbotron/style.css'
 
 const Home = () => {
 

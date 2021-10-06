@@ -170,6 +170,30 @@ db.once('open', async () => {
     lastName: 'admin',
     email: 'admin@testmail.com',
     password: 'pass1234'
+  },
+  {
+    firstName: 'Brent',
+    lastName: 'Albers',
+    email: 'BAlbers@testmail.com',
+    password: 'pass1234'
+  },
+  {
+    firstName: 'Bryce',
+    lastName: 'Sitler',
+    email: 'BSitler@testmail.com',
+    password: 'pass1234'
+  },
+  {
+    firstName: 'Bryan',
+    lastName: 'Daniel',
+    email: 'BDaniel@testmail.com',
+    password: 'pass1234'
+  },
+  {
+    firstName: 'Robert',
+    lastName: 'Fuke',
+    email: 'RFuke@testmail.com',
+    password: 'pass1234'
   });
 
   console.log('users seeded');

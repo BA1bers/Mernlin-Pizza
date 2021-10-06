@@ -4,6 +4,7 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 
 import Home from "./pages/Home";
+import Hero from "./components/Jumbotron/Hero"
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Login from "./pages/Login";
@@ -35,6 +36,7 @@ function App() {
         <div>
           <StoreProvider>
             <Nav />
+            
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/login" component={Login} />
@@ -47,7 +49,6 @@ function App() {
               <Route component={NoMatch} />
             </Switch>
           </StoreProvider>
-          <Footer />
         </div>
       </Router>
     </ApolloProvider>
