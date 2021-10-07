@@ -72,7 +72,7 @@ const Cart = () => {
   if (!state.cartOpen) {
     return (
       <div className="cart-closed" onClick={toggleCart}>
-        <img src={OrderButton} alt="OrderButton" />
+        <img className="orderButton" src={OrderButton} alt="OrderButton" />
       </div>
     );
   }

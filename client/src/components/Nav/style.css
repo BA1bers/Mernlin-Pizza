@@ -86,7 +86,7 @@
     font-weight: bold;
     font-size: 25px;
     padding-right: 20px;
-    left: 1750px;
+    left: 1450px;
     margin-top: -130px;
     color: rgba(247,127,0,1);
     }
@@ -94,12 +94,13 @@
 .logOut {
     white-space: nowrap;
     cursor: pointer;
-    position: relative;
-    float: right;
+    position: absolute;
+    text-decoration: none;
     font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
+    left: 1640px;
     margin-top: -130px;
     color: rgba(247,127,0,1);
     }
@@ -194,6 +195,12 @@
         .logIn {
             left: 1500px;
         }
+        .orderHistory {
+            left: 1250px;
+        }
+        .logOut {
+            left: 1440px;
+        }
     }
 
 @media only screen and (max-width: 1670px) {
@@ -205,30 +212,12 @@
         }
     }
 
-@media only screen and (max-width: 1450px) {
-        .signUp {
+@media only screen and (max-width: 1620px){
+        .orderHistory {
             left: 1000px;
         }
-        .logIn {
-            left: 1150px;
-        }
-    }
-
-@media only screen and (max-width: 1270px) {
-        .signUp {
-            left: 900px;
-        }
-        .logIn {
-            left: 1050px;
-        }
-    }
-
-@media only screen and (max-width: 1150px) {
-        .signUp {
-            left: 700px;
-        }
-        .logIn {
-            left: 850px;
+        .logOut {
+            left: 1190px;
         }
     }
 
@@ -251,6 +240,15 @@
         }
     }
 
+@media only screen and (max-width: 1450px) {
+        .signUp {
+            left: 1000px;
+        }
+        .logIn {
+            left: 1150px;
+        }
+    }
+
 @media only screen and (max-width: 1405px) {
         .navLinks {
             font-size: 25px !important;
@@ -261,10 +259,66 @@
         }
     }
 
+@media only screen and (max-width: 1330px){
+        #resNameMERNlin {
+            font-size: 40px;
+            margin-top: 20px;
+            margin-right: 45px;
+        }
+        #resNamePizza {
+            font-size: 40px;
+            margin-top: 20px;
+        }
+        .orderHistory {
+            left: 900px;
+            font-size: 18px;
+        }
+        .logOut {
+            left: 1040px;
+            font-size: 18px;
+        }
+    }
+
 @media only screen and (max-width: 1300px) {
         .navLinks {
             font-size: 22px !important;
             padding: 0;
+        }
+    }
+
+@media only screen and (max-width: 1270px) {
+        #resNameMERNlin {
+            font-size: 30px;
+            margin-top: 20px;
+            margin-right: 45px;
+        }
+        #resNamePizza {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+        .signUp {
+            left: 870px;
+        }
+        .logIn {
+            left: 990px;
+        }
+    }
+
+@media only screen and (max-width: 1230px){
+        .orderHistory {
+            left: 700px;
+        }
+        .logOut {
+            left: 840px;
+        }
+    }
+
+@media only screen and (max-width: 1150px) {
+        .signUp {
+            left: 700px;
+        }
+        .logIn {
+            left: 820px;
         }
     }
 
@@ -282,6 +336,15 @@
     }
 }
 
+@media only screen and (max-width: 1030px){
+    .orderHistory {
+        left: 650px;
+    }
+    .logOut {
+        left: 790px;
+    }
+}
+
 @media only screen and (max-width: 980px) {
     .navLinks {
         font-size: 18px !important;
@@ -293,7 +356,43 @@
     .navbarLeft {
         left: 0;
     }
+    .signUp {
+        left: 630px;
+    }
+    .logIn {
+        left: 750px;
+    }
 }
+
+@media only screen and (max-width: 960px){
+    .orderHistory {
+        left: 10px;
+    }
+    .logOut {
+        left: 140px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    #resNameMERNlin {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    #resNamePizza {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .signUp {
+        left: 20px;
+        font-size: 15px;
+    }
+    .logIn {
+        left: 95px;
+        font-size: 15px;
+    }
+}
+
 
 @media only screen and (max-width: 800px) {
     .navLinks {

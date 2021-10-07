@@ -56,9 +56,9 @@ function Nav() {
               Order History
             </Link>
           </li>
-          <li className="logOut">
+          <li>
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a href="/" onClick={() => Auth.logout()}>
+            <a className="logOut" href="/" onClick={() => Auth.logout()}>
               Log Out
             </a>
           </li>
