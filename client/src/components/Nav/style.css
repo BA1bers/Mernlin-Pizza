@@ -78,8 +78,9 @@
 
 .orderHistory {
     white-space: nowrap;
-    position: absolute;
+    position: relative;
     cursor: pointer;
+    float: left;
     font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
