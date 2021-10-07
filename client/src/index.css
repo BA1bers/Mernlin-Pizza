@@ -215,3 +215,18 @@ input:focus {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 1600px) {
+  .orderButton {
+    width: 80px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 1560px) {
+  .orderButton {
+    width: 50px;
+    margin-top: 10px;
+  }
+}
+
