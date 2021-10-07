@@ -19,7 +19,7 @@ db.once('open', async () => {
       name: 'Buffalo Wings',
       description:
         'Classic Chicken wings smoothered in Buffalo Sauce, served with your choice Bleu cheese or Ranch dressing.',
-      image: '../Images/buffaloWings.png',
+      image: 'buffaloWings.png',
       category: categories[0]._id,
       price: 5.99,
       quantity: 6
@@ -28,7 +28,7 @@ db.once('open', async () => {
       name: 'Mozzarella Sticks',
       description:
         'Coated with crisp garlic butter breading, sprinkled with Parmesan cheese and served with marinara sauce.',
-      image: '../Images/mozzerellaSticks.PNG',
+      image: 'mozzerellaSticks.PNG',
       category: categories[0]._id,
       price: 3.99,
       quantity: 6
@@ -38,7 +38,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'Fresh buttery-tasting dough baked to golden brown, served drizzled with the perfect amount of cinnamon, sugar, and a side of icing.',
-      image: '../Images/cinnamonTwist.PNG',
+      image: 'cinnamonTwist.PNG',
       price: 6.99,
       quantity: 10
     },
@@ -47,7 +47,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'Fresh baked dough, topped with a special concoction of Parmesan cheese and garlic.',
-      image: '../Images/cheesyBreadSticks.PNG',
+      image: 'cheesyBreadSticks.PNG',
       price: 5.99,
       quantity: 10
     },
@@ -56,7 +56,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'Battered Pickle slices deep fried, served with your choice Bleu cheese or Ranch dressing.',
-      image: '../Images/friedPickles.PNG',
+      image: 'friedPickles.PNG',
       price: 7.99,
       quantity: 20
     },
@@ -65,7 +65,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'Baked Brussels sprouts tossed in a garlic buffalo sauce, served with vergan bleu cheese or vegan ranch dressing.',
-      image: '../Images/veganGarlicBuffaloSprouts.PNG',
+      image: 'veganGarlicBuffaloSprouts.PNG',
       price: 6.99,
       quantity: 6
     },
@@ -74,7 +74,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, and cheese.',
-      image: '../Images/cheesePizza.PNG',
+      image: 'cheesePizza.PNG',
       price: 9.99,
       quantity: 1
     },
@@ -83,7 +83,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese and pepperoni.',
-      image: '../Images/pepperoniPizza.PNG',
+      image: 'pepperoniPizza.PNG',
       price: 9.99,
       quantity: 1
     },
@@ -92,7 +92,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, pepperoni, sausage, bell peppers, onions, black olives, and mushrooms.',
-      image: '../Images/supremePizza.PNG',
+      image: 'supremePizza.PNG',
       price: 9.99,
       quantity: 1
     },
@@ -101,7 +101,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description: 
       'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, pepperoni, sausage, ham, and bacon.',
-      image: '../Images/meatLovers.PNG',
+      image: 'meatLovers.PNG',
       price: 9.99,
       quantity: 1
     },
@@ -110,7 +110,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, ham, and pineapple.',
-      image: '../Images/hawaiianPizza.PNG',
+      image: 'hawaiianPizza.PNG',
       price: 9.99,
       quantity: 1
     },
@@ -119,7 +119,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Deep dish 16" Pizza made with marinara sauce, garlic seasoning, parsley, cheese, bell peppers, onions, black olives, and mushrooms.',
-      image: '../Images/veggiePizza.PNG',
+      image: 'veggiePizza.PNG',
       price: 9.99,
       quantity: 1
     },
@@ -128,7 +128,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Deep dish 16" Pizza made with minced garlic, cashew mozzarella, tomatoes, tangy onions, mushrooms, black olives, and bell peppers.',
-      image: '../Images/veganCapresePizza.PNG',
+      image: 'veganCapresePizza.PNG',
       price: 10.99,
       quantity: 1
     },
@@ -137,7 +137,7 @@ db.once('open', async () => {
       category: categories[2]._id,
       description:
         'Crisp Hearts of Romaine Tossed in Robust Caesar Dressing, topped with Herbed Croutons & Parmesan Cheese.',
-      image: '../Images/cesarSalad.PNG',
+      image: 'cesarSalad.PNG',
       price: 6.99,
       quantity: 1
     },
@@ -146,7 +146,7 @@ db.once('open', async () => {
       category: categories[2]._id,
       description:
         'Bed of mixed greens plus hand-sliced cucumbers, grape tomatoes, shredded cheddar and croutons.',
-      image: '../Images/gardenSalad.PNG',
+      image: 'gardenSalad.PNG',
       price: 6.99,
       quantity: 1
     },
@@ -155,7 +155,7 @@ db.once('open', async () => {
       category: categories[2]._id,
       description:
         'Juicy tomatoes, crisp cucumber, sliced red onion, green pepper, crumbly feta cheese and plump Kalamata olives.',
-      image: '../Images/greekSalad.PNG',
+      image: 'greekSalad.PNG',
       price: 6.99,
       quantity: 1
     }
