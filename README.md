@@ -81,14 +81,14 @@ Clone or fork our Repo and navigate to the root folder in the terminal. At this 
 
 ## Screenshot
 
-![Home Page](client/src/components/Images/homePage.PNG)
-![Sign Up](client/src/components/Images/signUp.PNG)
-![Log In](client/src/components/Images/login.PNG)
-![Appetizers](client/src/components/Images/appetizers.PNG)
-![Pizza](client/src/components/Images/pizza.PNG)
-![Salads](client/src/components/Images/salads.PNG)
-![Contact](client/src/components/Images/contact.PNG)
-![About Us](client/src/components/Images/about.PNG)
+![Home Page](/client/public/images//homePage.PNG)
+![Sign Up](/client/public/images//signUp.PNG)
+![Log In](/client/public/images//login.PNG)
+![Appetizers](/client/public/images//appetizers.PNG)
+![Pizza](/client/public/images//pizza.PNG)
+![Salads](/client/public/images//salads.PNG)
+![Contact](/client/public/images//contact.PNG)
+![About Us](/client/public/images//about.PNG)
 
 ## Langauges
 
